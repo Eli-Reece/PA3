@@ -21,7 +21,7 @@ if (Alg != "EDF" and Alg != "RM"):
     sys.exit()
 
 #Split the lines into int lists################################
-with open(file, "r") as f:
+with open("file", "r") as f:
     data = f.read().splitlines()
 overview = [int(i) for i in data[0].split()]
 task1 = data[1].split()
@@ -40,13 +40,13 @@ task3 = [int(i) for i in task3]
 task4 = [int(i) for i in task4]
 task5 = [int(i) for i in task5]
 #Integer Parsing#################################################
-numTasks = int(overview[0])
-sysTime = int(overview[1])
-aCPU1188 = int(overview[2])
-aCPU918 = int(overview[3])
-aCPU648 = int(overview[4])
-aCPU384 = int(overview[5])
-iCPUlow = int(overview[6])
+numTasks = overview[0]
+sysTime = overview[1]
+aCPU1188 = overview[2]
+aCPU918 = overview[3]
+aCPU648 = overview[4]
+aCPU384 = overview[5]
+iCPUlow = overview[6]
 
 class W1:
     deadline = task1[0]

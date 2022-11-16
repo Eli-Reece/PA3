@@ -81,4 +81,4 @@ class W5:
 
 print(Alg)
 print("Energy Eficient:", EE)
-
+print(W5.deadline)
